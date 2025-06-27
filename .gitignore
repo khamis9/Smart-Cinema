@@ -1,0 +1,18 @@
+# Dependencies & Node
+node_modules/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Database or secrets
+*.sql
+.env
+
+# OS junk
+desktop.ini
