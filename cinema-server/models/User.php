@@ -10,6 +10,19 @@ class User extends Model{
 
     protected static string $table = "users";
 
+    public function setName(string $name) {
+        $this->name = $name;
+    }
+
+    public function setEmail(string $email) {
+        $this->email = $email;
+    }
+
+    public function setPhone(string $phone) {
+        $this->phone = $phone;
+    }
+
+
     public function __construct(array $data){
         $this->id = $data["id"];
         $this->name = $data["name"];
@@ -30,4 +43,12 @@ class User extends Model{
             "phone" => $this->phone,
         ];
     }
+
+    public function update(mysqli $mysqli) {
+        $stmt = $mysqli->prepare("UPDATE users SET name = ?, email = ?, phone = ? WHERE id = ?");
+        $stmt->bind_param("sssi", $this->name, $this->email, $this->phone, $this->id);
+        $stmt->execute();
+    }
+
 }
+
