@@ -14,6 +14,7 @@ if (!isset($data["id"])) {
     return;
 }
 
+/** @var User $user */
 $user = User::find($mysqli, $data["id"]);
 
 if (!$user) {

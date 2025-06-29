@@ -3,7 +3,7 @@ require_once("Model.php");
 
 class Seat extends Model {
     private int $id;
-    private int $screen_id;
+    private int $booking_id;
     private string $seat_number;
     private string $status; // available, locked, booked
 
@@ -11,7 +11,7 @@ class Seat extends Model {
 
     public function __construct(array $data) {
         $this->id = $data["id"];
-        $this->screen_id = $data["screen_id"];
+        $this->booking_id = $data["booking_id"];
         $this->seat_number = $data["seat_number"];
         $this->status = $data["status"];
     }
@@ -33,7 +33,7 @@ class Seat extends Model {
     public function toArray() {
         return [
             "id" => $this->id,
-            "screen_id" => $this->screen_id,
+            "booking_id" => $this->booking_id,
             "seat_number" => $this->seat_number,
             "status" => $this->status,
         ];
