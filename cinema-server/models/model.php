@@ -3,6 +3,9 @@ abstract class Model {
     protected static string $table;
     protected static string $primary_key = "id";
 
+     abstract public function __construct(array $data);
+    abstract public function toArray();
+
     public static function find(mysqli $mysqli, int $id) {
         $sql = sprintf("SELECT * FROM %s WHERE %s = ?", static::$table, static::$primary_key);
         $query = $mysqli->prepare($sql);
