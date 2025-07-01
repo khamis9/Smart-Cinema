@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+#trailer-container iframe {
+    margin-top: 15px;
+    width: 560px;
+    height: 315px;
+    border: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}

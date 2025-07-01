@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../styles/profile.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="movies.html">Movies</a>
+      <a href="bookings.html">My Bookings</a>
+      <a href="#" id="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Profile</h1>
+    <form id="profile-form">
+      <label>Name: <input type="text" id="name" required></label><br><br>
+      <label>Email: <input type="email" id="email" required></label><br><br>
+      <label>Phone: <input type="text" id="phone" required></label><br><br>
+      <button type="submit">Update Profile</button>
+    </form>
+  </main>
+
+  <script src="../scripts/axios.min.js"></script>
+  <script src="../scripts/profile.js"></script>
+</body>
+</html>

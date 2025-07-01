@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+#seats-container, #snacks-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.seat {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.seat.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.snack-item {
+    margin-bottom: 10px;
+}
+
+.snack-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

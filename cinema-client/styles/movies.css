@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+#movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 220px;
+}
+
+.movie-title {
+    font-weight: bold;
+}
+
+.movie-description {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.movie-genres {
+    font-style: italic;
+    font-size: 13px;
+    color: #555;
+}
+
+.movie-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: darkblue;
+    cursor: pointer;
+    text-decoration: underline;
+}
